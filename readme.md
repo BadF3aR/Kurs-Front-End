@@ -1,7 +1,41 @@
-<h1>Hello World</h1> 
-<br>
- Test synchro
-<br>
-Test 2 
-<br>
-By Artur.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćw.1-Tabela</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>
+                kolumna 1
+            </td>
+            <td rowspan="1"> <! rociaga sie pionowo>
+                kolumna 2
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"> <! rociaga sie poziomo>
+                kolumna 3
+            </td>
+        </tr>
+        <tr>
+            <td>
+                kolumna 4
+            </td>
+            <td>
+                kolumna 5
+            </td>
+        </tr>
+    </table>
+
+    <ol>
+        <li>Wejdź na swoje repozytorium na github</li>
+        <li>Przejdź do settings </li>
+        <li>Przejdź do pages</li>
+        <li>W source kliknij na none i wybierz swoje repozytorium</li>
+    </ol>
+</body>
+</html>

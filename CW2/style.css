@@ -1,0 +1,24 @@
+h1
+{
+    text-align: center;
+    color:blueviolet;
+    font-size: 40px;
+    border: 4px dashed darkred;
+    background-color:orange;
+}
+
+h3
+{
+    text-align: right;
+    color:cornflowerblue;
+    font-size: 25px;
+}
+
+#main
+{
+    border: 2px solid green;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 1000px;
+}

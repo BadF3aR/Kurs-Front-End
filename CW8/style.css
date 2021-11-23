@@ -19,7 +19,6 @@ header
     width: 90px;
     height: 90px;
     background-image: url(https://raw.githubusercontent.com/apietryga/kurs-Front-end/master/materialy/lekcja2/cw1/sprites.jpg);
-
 }
 
 .jpg:hover
@@ -68,6 +67,12 @@ header
     font-size: 40px;
     font-weight: 600;
     color: blue;
+}
+
+.wrapper
+{
+    display: flex;
+    justify-content: space-between;
 }
 .chartX,.chartY{
     padding: 5px;

@@ -1,0 +1,81 @@
+body
+{
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header
+{
+    text-align: center;
+    background-color: tomato;
+}
+
+h1
+{
+    color:greenyellow;
+    font-size: 70px;
+    text-shadow: 0px 0px 8px black;
+    margin: 0;
+}
+
+.subtitle
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+    background-color: khaki;
+}
+
+.gif
+{
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 41px 5px rgba(20, 20, 27, 1);
+    -moz-box-shadow: 0px 1px 41px 5px rgba(20, 20, 27, 1);
+    box-shadow: 0px 1px 41px 5px rgba(20, 20, 27, 1);
+}
+
+.gif img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: yellowgreen;
+}
+
+main div
+{
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.IMG
+{
+    max-width: 100%;
+    max-height: 100%;
+    flex:2;
+}
+
+.description
+{
+    flex:1;
+    font-size: 30px;
+    text-align: center;
+}
+
+footer
+{
+    padding: 15px;
+    text-align: center;
+    background-color: tomato;
+}

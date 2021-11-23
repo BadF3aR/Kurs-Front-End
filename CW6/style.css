@@ -1,0 +1,37 @@
+body
+{
+    margin:0px;
+}
+
+.viewport
+{
+    background-color: red;
+    width: 50vw;
+    height: 50vh;
+}
+
+/*czcionki em */
+.em
+{
+    font-size: 2em;
+}
+
+/*czcionki rem*/
+:root
+{
+    font-size: 10px; /*rem zalezy od root, nie rodzica */
+}
+.rem
+{
+    font-size: 4rem;
+}
+
+.rem2
+{
+    font-size: 5rem;
+}
+
+.rem3
+{
+    font-size: 6rem;
+}

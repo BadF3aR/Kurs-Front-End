@@ -41,6 +41,34 @@ header
     color: green;
 }
 
+.tekstlogo1
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: orange;
+}
+.tekstlogo2
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: blue;
+}
+
+.absolutne
+{
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    color: red;
+}
+
+.relatywne
+{
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    color: blue;
+}
 .chartX,.chartY{
     padding: 5px;
     border:5px solid black;
@@ -58,8 +86,14 @@ header
   .chartX div:nth-child(4){height:2mm;}
   .chartX div:nth-child(5){height:2pt;}
   
+  .chartX
+  {
+      margin: 30px 30px 30px 20px;
+      background-color: rgb(177, 236, 122);
+  }
   .chartY
   {
+    background-color: rgb(212, 108, 90);
     flex-direction: column;
     min-height:70vh;
   }

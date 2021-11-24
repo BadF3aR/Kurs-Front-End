@@ -1,24 +1,39 @@
 body
 {
     margin: 0;
-
+    border: 2px solid black;
 }
-
+a
+{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid  blueviolet;
+}
 :root
 {
     font-size: 18px;
 }
 header
 {
+    margin: 0px 30px 30px 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    border: 5px solid black;
 }
+
+.logo
+{
+    border: 2px solid black;
+    margin:20px 0px 20px ;
+}  
+
 .jpg
 {
     border: 2px solid red;
     width: 90px;
     height: 90px;
     background-image: url(https://raw.githubusercontent.com/apietryga/kurs-Front-end/master/materialy/lekcja2/cw1/sprites.jpg);
+    justify-content: center;
 }
 
 .jpg:hover
@@ -38,6 +53,8 @@ header
     font-size: 20px;
     font-weight: 600;
     color: green;
+    flex: 1;
+    border: 1px solid black;
 }
 
 .tekstlogo1
@@ -115,14 +132,6 @@ header
   .chartY div:nth-child(4){width:1vh;}
   .chartY div:nth-child(5){width:3vh;}
 
-section
-{
-    display: flex;
-    justify-content: center;
-    
-    color: red;
-}
-
 .text1
 {
     font-size: 1em;
@@ -135,5 +144,25 @@ section
 
 .text3
 {
-    font-size: 3em;
+    font-size: 4em;
+}
+
+h2
+{
+   
+    font-size: 40px;
+    font-weight: 600;
+}
+
+footer
+{
+    border: 5px solid black;
+    margin: 30px 30px 30px 20px;
+    display: flex;
+}
+
+.fonts
+{
+    justify-content: flex-end;
+    color: red 
 }

@@ -25,6 +25,9 @@ header
 {
     border: 2px solid black;
     margin:20px 0px 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }  
 
 .jpg
@@ -132,19 +135,10 @@ header
   .chartY div:nth-child(4){width:1vh;}
   .chartY div:nth-child(5){width:3vh;}
 
-.text1
-{
-    font-size: 1em;
-}
-
-.text2
-{
-    font-size: 2em;
-}
-
 .text3
 {
-    font-size: 4em;
+    display: flex;
+    font-size: 2em;
 }
 
 h2
@@ -158,11 +152,11 @@ footer
 {
     border: 5px solid black;
     margin: 30px 30px 30px 20px;
-    display: flex;
 }
 
 .fonts
 {
+    display: flex;
     justify-content: flex-end;
     color: red 
 }

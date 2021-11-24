@@ -98,6 +98,7 @@ header
   }
   .chartY
   {
+    margin: 30px 30px 30px 20px;
     background-color: rgb(212, 108, 90);
     flex-direction: column;
     min-height:70vh;

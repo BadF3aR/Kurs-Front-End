@@ -1,68 +1,132 @@
-*{box-sizing: border-box;}
-body{
-  margin:0;
+body
+{
+    color: red;
+    background-color: rgb(80, 80, 80);
+    margin: 0;
 }
-/* WYŚWIETLANIE SŁONIA */
-.container{
-  border:2px dashed red;
-  width:40vw;
-  height:40vw;
+
+.cookies
+{
+    position: static;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vw;
+}
+
+.zwierzeta
+{
+    position: sticky;
+    top: 0;
+    border: 2px solid black;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 4vw;
+    padding-left: 5vw;
+  /* ZINDEX żeby było widać i bgcolor żeby nie było widać tła */
+    z-index:1;
+    background-color: aliceblue;
+}
+.first
+{
+  /* po to, żeby trzymała absolutne labele */
   position:relative;
 }
-.label{
-  background-color: #fff;
+
+.label
+{
+  /* po to, żeby była w jednym miejscu z img (nad nim)*/
+  position:absolute;
+  top:0;
+  /* wyśrodkuj napis */
   display:flex;
   justify-content: center;
   align-items: center;
-  transition: 1s;
-  transition-delay: 3s;
+  /* bg, żeby nie było widać obrazka */
+  background-color: aliceblue;
 }
+
+.img
+{
+    background-color: white;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+/* po kliknięciu na label, zniknij go */
 .label:active{
-  transition: .01s;
-  transition-delay: 0s;
   opacity:0;
 }
-.img{
-  background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/slon.jpg?raw=true);
-  background-size: cover;
-}
-.slon{ background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/slon.jpg?raw=true);}
-.zebra{  background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/zebra.jpg?raw=true);}
-.lew{  background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/lew.jpg?raw=true);}
-.nosorozec{  background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/nosorozec.jpg?raw=true);}
+/* przypnij kolejne zdjęcia */
+.i1{ background-image:url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/slon.jpg?raw=true);}
+.i2{ background-image:url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/zebra.jpg?raw=true);}
+.i3{ background-image:url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/lew.jpg?raw=true);}
+.i4{ background-image:url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/nosorozec.jpg?raw=true);}
 
-.container div{
-  border:2px dashed blue;
-  /* min-height:100px; */
-  align-items: center;
+/* .img:active
+{
+    background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/slon.jpg?raw=true) ;
+    display: none;
+    opacity:0;
+} */
+
+.wrapper
+{
+    border: 2px solid red;
+    min-height: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
+/* z tym ostrożnie, bo bierzesz pod uwagę wszystkie divy w środku wrappera */
+.wrapper div
+{
+    border: 2px dashed pink;
+    width: 35vw;
+    height: 35vw;
+}
+
+
+@media(max-width:720px) /*RWD*/
+{
+.wrapper .first
+{
+    /* width: 60vw;
+    height: 60vw; */
+    margin-top: 10vw;
+}
 .wrapper div{
-.wrapper .container{
-  border:2px dashed blue;
-  width: 35vw;
-  height: 35vw;
+  width: 60vw;
+  height: 60vw;
 }
 
-/* menusy */
-.cookies, .interested, .animals{
-  border:2px solid #000;
-  background-color: aliceblue;
-  padding:10px;
-  text-align: center;
-}
-.interested{
-  position: fixed;
-  bottom:0;
-  width: 100%;
-  z-index:1;
+
 }
 
-@media (max-width:720px){
-    .wrapper div{
-    .wrapper .container{
-      width: 60vw;
-      height: 60vw;
-      margin-top:10vw;
-    }
-  }
+footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vw;
+    width: 100%;
+    background-color:#000;
+}
+
+footer a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+}

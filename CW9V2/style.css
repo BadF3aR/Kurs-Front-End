@@ -1,6 +1,6 @@
 body
 {
-    color: red;
+    color:black;
     background-color: rgb(80, 80, 80);
     margin: 0;
 }
@@ -13,6 +13,9 @@ body
     justify-content: center;
     align-items: center;
     height: 4vw;
+    font-weight: 600;
+    color:  white;
+    background-color: black;
 }
 
 .zwierzeta
@@ -28,6 +31,7 @@ body
   /* ZINDEX żeby było widać i bgcolor żeby nie było widać tła */
     z-index:1;
     background-color: aliceblue;
+    font-weight: 600;
 }
 .first
 {
@@ -46,6 +50,8 @@ body
   align-items: center;
   /* bg, żeby nie było widać obrazka */
   background-color: aliceblue;
+  color: green;
+  font-weight: 600;
 }
 
 .img
@@ -76,7 +82,6 @@ body
 
 .wrapper
 {
-    border: 2px solid red;
     min-height: 100vw;
     display: flex;
     flex-wrap: wrap;
@@ -87,7 +92,7 @@ body
 /* z tym ostrożnie, bo bierzesz pod uwagę wszystkie divy w środku wrappera */
 .wrapper div
 {
-    border: 2px dashed pink;
+    border-radius: 5px;
     width: 35vw;
     height: 35vw;
 }

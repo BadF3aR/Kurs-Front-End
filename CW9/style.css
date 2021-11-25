@@ -1,0 +1,105 @@
+/**{box-sizing: border-box;} po co to? */
+
+body
+{
+    color: red;
+    background-color: rgb(80, 80, 80);
+    margin: 0;
+}
+
+
+.cookies
+{
+    position: static;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vw;
+}
+
+.zwierzeta
+{
+    position: sticky;
+    top: 0;
+    border: 2px solid black;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 4vw;
+    padding-left: 5vw;
+}
+.first
+{
+
+}
+
+.label
+{
+
+}
+
+.img
+{
+    background-color: white;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.img:active
+{
+    background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/slon.jpg?raw=true) ;
+    /* display: none; */
+    opacity:0;
+}
+
+.wrapper
+{
+    border: 2px solid red;
+    min-height: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper div
+{
+    border: 2px dashed pink;
+    width: 35vw;
+    height: 35vw;
+}
+
+
+@media(max-width:720px) /*RWD*/
+{
+.wrapper div
+{
+    width: 60vw;
+    height: 60vw;
+    margin-top: 10vw;
+}
+}
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vw;
+    width: 100%;
+}
+
+footer a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+}

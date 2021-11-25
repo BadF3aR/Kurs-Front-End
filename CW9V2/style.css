@@ -1,0 +1,68 @@
+*{box-sizing: border-box;}
+body{
+  margin:0;
+}
+/* WYŚWIETLANIE SŁONIA */
+.container{
+  border:2px dashed red;
+  width:40vw;
+  height:40vw;
+  position:relative;
+}
+.label{
+  background-color: #fff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  transition-delay: 3s;
+}
+.label:active{
+  transition: .01s;
+  transition-delay: 0s;
+  opacity:0;
+}
+.img{
+  background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/slon.jpg?raw=true);
+  background-size: cover;
+}
+.slon{ background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/slon.jpg?raw=true);}
+.zebra{  background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/zebra.jpg?raw=true);}
+.lew{  background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/lew.jpg?raw=true);}
+.nosorozec{  background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/nosorozec.jpg?raw=true);}
+
+.container div{
+  border:2px dashed blue;
+  /* min-height:100px; */
+  align-items: center;
+}
+
+.wrapper div{
+.wrapper .container{
+  border:2px dashed blue;
+  width: 35vw;
+  height: 35vw;
+}
+
+/* menusy */
+.cookies, .interested, .animals{
+  border:2px solid #000;
+  background-color: aliceblue;
+  padding:10px;
+  text-align: center;
+}
+.interested{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  z-index:1;
+}
+
+@media (max-width:720px){
+    .wrapper div{
+    .wrapper .container{
+      width: 60vw;
+      height: 60vw;
+      margin-top:10vw;
+    }
+  }

@@ -1,0 +1,82 @@
+body
+{
+    margin: 0;
+    background-color:rgb(94, 134, 209);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header
+{
+    font-size: 3em;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0px 2px 2px black;
+}
+
+nav
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "b3 b2 b1" "b4 b5 b1";
+    gap: 10px;
+}
+
+.wrapper a:nth-child(1){grid-area:b3;}
+.wrapper a:nth-child(2){grid-area:b4;}
+.wrapper a:nth-child(3){grid-area:b1;}
+.wrapper a:nth-child(4){grid-area:b2;}
+.wrapper a:nth-child(5){grid-area:b5;}
+
+a
+{
+    border: 2px solid whitesmoke;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 2px 4px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    background-color: rgb(87, 87, 87);
+    border-radius: 5px;
+}
+
+a:hover
+{
+    background-color: rgb(87, 87, 87);
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 1px 4px  rgb(255, 255, 255);
+}
+
+a i
+{
+    font-size: 5em;
+}
+
+footer
+{
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid black;
+    background-color: black;
+    color: blanchedalmond;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media(max-width:720px){
+nav
+{
+    grid-template-areas:
+    "b5"
+    "b1" 
+    "b2" 
+    "b4" 
+    "b3";
+    grid-template-columns: 1fr ;
+}
+}

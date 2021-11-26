@@ -74,6 +74,8 @@ body
 
             article
             {   
+                display: flex;
+                flex-direction: column;
                 text-align: center;
                 margin: 20px;
                 width: 70vw;
@@ -179,6 +181,10 @@ body
     }
 
     @media (max-width: 720px) {
+        .socials
+        {
+            font-size: 2em !important;
+        }
         nav
         {
             flex-direction: column;

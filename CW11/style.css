@@ -81,6 +81,13 @@ body .wrapper main .Headermain {
 }
 
 body .wrapper main article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   margin: 20px;
   width: 70vw;
@@ -191,6 +198,9 @@ body footer .stopka {
 }
 
 @media (max-width: 720px) {
+  body .socials {
+    font-size: 2em !important;
+  }
   body nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

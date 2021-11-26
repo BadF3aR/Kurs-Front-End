@@ -1,3 +1,9 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   /* Background pattern from subtlepatterns.com */
   background-image: url(footer_lodyas.png);
@@ -14,6 +20,8 @@ body .TOPheader {
   font-weight: 600;
   text-shadow: 0px 2px 2px white;
   color: #e20000;
+  text-align: center;
+  padding-bottom: 2vh;
 }
 
 body nav {
@@ -104,7 +112,7 @@ body .wrapper aside div {
   padding: 5px;
   border: 2px solid black;
   border-radius: 5px;
-  margin: 5px;
+  margin: 5%;
 }
 
 body .wrapper aside div h4 {
@@ -117,14 +125,9 @@ body section {
         flex-direction: column; */
   border: 2px solid black;
   border-radius: 5px;
-  height: 30vh;
+  min-height: 30vh;
+  /* bezpiecniej uzywać min  */
   background-color: #00e213;
-}
-
-body section div {
-  height: 10vh;
-  border: 2px solid black;
-  border-radius: 5px;
 }
 
 body section article {
@@ -140,7 +143,65 @@ body section article .avatar {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  font-size: 5em;
+  font-size: 3em;
   background-color: #9ffd88;
+}
+
+body section article .cc {
+  border: 2px solid black;
+  border-radius: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body section article .cc textarea {
+  width: 100%;
+  height: 100%;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body footer a {
+  text-decoration: none;
+  color: white;
+}
+
+body footer .socials {
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 5em;
+}
+
+body footer .stopka {
+  text-align: right;
+}
+
+@media (max-width: 720px) {
+  body nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

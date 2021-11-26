@@ -1,0 +1,146 @@
+body {
+  /* Background pattern from subtlepatterns.com */
+  background-image: url(footer_lodyas.png);
+}
+
+body .TOPheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 5em;
+  font-weight: 600;
+  text-shadow: 0px 2px 2px white;
+  color: #e20000;
+}
+
+body nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #00e213;
+}
+
+body nav a {
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+  background-color: #00e213;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav a:hover {
+  background-color: #72e67b;
+}
+
+body .wrapper {
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: royalblue;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .wrapper main {
+  border-right: 2px solid black;
+  border-radius: 5px;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+body .wrapper main .Headermain {
+  text-align: center;
+  font-size: 3em;
+}
+
+body .wrapper main article {
+  text-align: center;
+  margin: 20px;
+  width: 70vw;
+  font-size: 25px;
+}
+
+body .wrapper main article img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+}
+
+body .wrapper aside {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .wrapper aside .HALO {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
+
+body .wrapper aside div {
+  background-color: blanchedalmond;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+body .wrapper aside div h4 {
+  margin: 5px;
+}
+
+body section {
+  margin-top: 3vh;
+  /*display: flex;  moza tak zrobic tez :d 
+        flex-direction: column; */
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 30vh;
+  background-color: #00e213;
+}
+
+body section div {
+  height: 10vh;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+body section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body section article .avatar {
+  border: 2px solid black;
+  width: 10vw;
+  height: 10vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 5em;
+  background-color: #9ffd88;
+}
+/*# sourceMappingURL=style.css.map */

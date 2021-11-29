@@ -1,0 +1,35 @@
+body
+{
+    background-color: rgb(180, 180, 180);
+    h1
+    {
+        font-size: 4em;
+        text-align: center;
+    }
+    main
+    {
+        display: flex;
+        justify-content: center;
+        max-width: 60vw;
+        margin: auto;
+        div
+        {
+            border: 2px solid red;
+            flex: 1;
+            display: grid;
+            place-items: center;
+            padding: 5vw;
+            cursor: pointer;
+            font-size: 5em;
+        }
+        img
+        {
+            max-width: 100%;
+            flex: 3;
+        }
+    }
+    footer
+    {
+        text-align: right;
+    }
+}

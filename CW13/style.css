@@ -1,0 +1,44 @@
+body {
+  background-color: #b4b4b4;
+}
+
+body h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 60vw;
+  margin: auto;
+}
+
+body main div {
+  border: 2px solid red;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 5vw;
+  cursor: pointer;
+  font-size: 5em;
+}
+
+body main img {
+  max-width: 100%;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+body footer {
+  text-align: right;
+}
+/*# sourceMappingURL=style.css.map */
